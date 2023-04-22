@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+            padding: 10px 50px;
+            background-color:gainsboro;
+        }
+
+        .field {
+            font-size: 20px;
+           
+        }
+
+        .field input {
+            width: 50%;
+            padding: 12px 20px;
+            border: 1px solid blue;
+            margin: 14px;
+            border-radius: 4px;
+            font-size: 15px;
+           
+        }
+        .button {
+            border-radius: 9px;
+            width: 140px;
+            height: 50px;
+            font-size: 25px;
+            margin: 22px 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>  
+        function validateform()
+        {  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;  
+        var email=document.myform.email.value; 
+        var atposition=email.indexOf("@");  
+        var dotposition=email.lastIndexOf(".");
+          
+        if (name==null || name==""){  
+          alert("Name can't be blank");  
+          return false;  
+        }else if(password.length<6){  
+          alert("Password must be at least 6 characters long.");  
+          return false;  
+          } 
+         else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length)
+        {  
+             alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition); 
+             return false;  
+        } 
+    } 
+     </script> 
+    <form name="myform" method="post" action="registered.html" onsubmit="return validateform()" >
+        <h1 >Registration Form</h1>
+        <h2>Contact Information</h2>
+        <p>Name*: <input  type="text" class="field" name="name" required></p>
+        <fieldset><legend>Gender</legend>
+        <p>Male <input type="radio"  name="gender" id="male">
+       Female <input type="radio" name="gender" id="female" required></p></fieldset>
+       <p>Adress <textarea name="adress" class="field" id="adress" cols="30" rows="10"></textarea> </p>
+        <p>Email* <input type="email" class="field" name="email" id="email" required></p>
+        <input type="submit" class="button" value="Register">
+    </form>
+</body>
+</html>

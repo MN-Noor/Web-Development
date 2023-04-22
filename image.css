@@ -1,0 +1,12 @@
+h1{
+    background-color: rgba(34, 156, 165, 0.808);
+}
+.b-g {
+   
+    background-image: url("term-bg-1-666de2d9.jpg");
+    width: 1000px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: 399px;
+    background-position:center;
+}

@@ -1,0 +1,15 @@
+h4{
+    color: blueviolet;
+}
+#psel:visited
+{
+color: brown;
+}
+h5::first-line
+{
+    color:violet;
+}
+nav
+{
+background-color: bisque;
+}

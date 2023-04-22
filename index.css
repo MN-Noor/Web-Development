@@ -1,0 +1,42 @@
+ol>ul>ol
+{
+    list-style: georgian;
+}
+ol
+{
+    list-style:decimal-leading-zero;
+
+}
+ol>ul{
+    list-style: square;
+}
+
+b u
+{
+    color: burlywood;
+}
+i+sub{
+    color: blue;
+}
+body hr+p b .special
+{
+    background-color: cadetblue;
+    color: blue
+    
+}
+#pretty
+{
+    color: bisque;
+}
+#diff
+{
+    background-color: aquamarine;
+}
+li[class~=a]
+{
+    color: blueviolet;
+}
+li[class~=b]
+{
+    color: brown;
+}

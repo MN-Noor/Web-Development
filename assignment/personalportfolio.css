@@ -1,0 +1,48 @@
+body{
+margin-left: 100px;
+margin-right: 100px;
+background-color:gainsboro;
+}
+
+.navbar li{
+float:right;
+list-style: none;
+margin-right: 15px;
+
+}
+.navbar li a
+{
+
+background-color:none;
+padding: 23px;
+border:12px gray;
+color: black;
+margin: auto;
+font-size: medium;
+font-style:Verdana;
+
+}
+h1{
+    font-family:"Lucida Handwriting",cursive;
+    color:rgb(29, 186, 214);
+    
+}
+p
+{
+    font-size: 21px;
+    margin-left: 60px;
+    margin-right: 32px;
+}
+h2{
+    font-size:40px;
+    font-style:Arial;
+}
+img{
+    float: right;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
