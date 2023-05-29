@@ -1,0 +1,2 @@
+In this Project I had used Bootstrap components to design index.html and bootstrap template to design payment and design page and I had used html and css to create catalogue page.and also i had designed mood icon on canva
+ 
